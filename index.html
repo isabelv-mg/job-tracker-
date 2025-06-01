@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content=""/>
+  <title>Cadastro de Vagas</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Nova Vaga</h1>
+    <form action="adicionar.php" method="POST">
+      <input type="text" name="empresa" placeholder="Empresa">
+      <input type="text" name="cargo" placeholder="Cargo">
+      <input type="url" name="link" placeholder="Link da vaga">
+      <input type="date" name="data_aplicacao">
+    <select name="status">
+      <option value="Aplicado">Aplicado</option>
+      <option value="Entrevista">Entrevista</option>
+      <option value="Rejeitado">Rejeitado</option>
+    </select>
+    <button type="submit">Adicionar vaga</button>
+    </form>
+    <h2>Vagas cadastradas</h2>
+    <div id="listaVagas"></div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
